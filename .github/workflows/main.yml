@@ -23,6 +23,14 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GH_PAT }}
 
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=donut-vertical&langs_count=20
+          path: profile/top-langs.svg
+          token: ${{ secrets.GH_PAT }}
+
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
