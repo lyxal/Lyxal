@@ -1,3 +1,5 @@
+_[For a better looking HTML version of this page, click here](https://lyxal.github.io/Lyxal/)_
+
 Hi there hello, I'm a final-year software engineering student at the University of Newcastle. I've spent most of my spare time thinking about what it actually feels like to write code.
 
 ---
