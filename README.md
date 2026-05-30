@@ -44,7 +44,6 @@ The thread running through most of my projects is an interest in what programmin
 
 On the AI side, I've been working through what agentic workflows are capable of in practice - less as a user and more as someone trying to understand where the feedback loop holds and where it doesn't.
 
-Backend roles, broadly. Open to most things above the hardware layer.
 
 ---
 
