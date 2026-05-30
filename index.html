@@ -1,367 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathan Oswald</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Oswald - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-      :root {
-        --bg: #f5faf7;
-        --text: #1a1f1b;
-        --muted: #647068;
-        --border: #d4e4da;
-        --green: #4a8c6a;
-        --green-tint: #beedab;
-      }
+    :root {
+      --bg: #0b0f0c;
+      --text: #e8f0e8;
+      --muted: #8aaa8f;
+      --border: #1e2b20;
+      --accent: #beedab;
+    }
 
-      body {
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Source Sans 3", sans-serif;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 1.7;
-      }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 400;
+    }
 
-      .wrap {
-        max-width: 680px;
-        margin: 0 auto;
-        padding: 0 28px;
-      }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 36px;
+    }
 
-      header {
-        padding: 80px 0 56px;
-      }
+    /* ── HEADER ── */
+    header {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
 
-      h1 {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: clamp(1.9rem, 4.5vw, 2.8rem);
-        line-height: 1.2;
-        margin-bottom: 20px;
-      }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
 
-      .tagline {
-        color: var(--muted);
-        max-width: 480px;
-        font-size: 16px;
-        margin-bottom: 28px;
-      }
+    h1 {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--accent);
+    }
 
-      .gh-link {
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--green);
-        text-decoration: none;
-        border-bottom: 1px solid var(--green-tint);
-        padding-bottom: 1px;
-        transition: opacity 0.15s;
-      }
-      .gh-link:hover {
-        opacity: 0.55;
-      }
+    .availability {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
 
-      hr {
-        border: none;
-        border-top: 1px solid var(--border);
-      }
+    .tagline {
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 520px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
 
-      .section {
-        padding: 52px 0;
-      }
+    .gh-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .gh-link:hover { color: var(--accent); border-color: var(--accent); }
 
-      .section-title {
-        font-family: "Lora", serif;
-        font-size: 1rem;
-        font-weight: 400;
-        font-style: italic;
-        color: var(--muted);
-        margin-bottom: 36px;
-      }
+    /* ── SECTIONS ── */
+    section { padding: 40px 0; border-bottom: 1px solid var(--border); }
 
-      .project {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 12px;
-        align-items: start;
-        text-decoration: none;
-        color: inherit;
-        padding: 26px 0;
-        border-bottom: 1px solid var(--border);
-        transition: opacity 0.15s;
-      }
-      .project:first-of-type {
-        border-top: 1px solid var(--border);
-      }
-      .project:hover {
-        opacity: 0.6;
-      }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
 
-      .project-name {
-        font-family: "Lora", serif;
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 5px;
-      }
+    /* ── PROJECTS ── */
+    .project {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      padding: 18px 0;
+      border-top: 1px solid var(--border);
+      transition: padding 0.2s ease, color 0.15s;
+      position: relative;
+    }
+    .project:last-child { border-bottom: 1px solid var(--border); }
+    .project:hover {
+      padding-left: 10px;
+      padding-right: 10px;
+      color: var(--accent);
+    }
 
-      .project-desc {
-        font-size: 15px;
-        color: var(--muted);
-        line-height: 1.6;
-      }
+    .project-left { flex: 1; min-width: 0; }
 
-      .project-tag {
-        display: inline-block;
-        font-size: 11px;
-        font-weight: 500;
-        color: var(--green);
-        background: var(--green-tint);
-        border-radius: 3px;
-        padding: 1px 7px;
-        margin-top: 10px;
-        opacity: 0.85;
-      }
+    .project-name {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--text);
+      transition: color 0.15s;
+    }
+    .project:hover .project-name { color: var(--accent); }
 
-      .arrow {
-        color: var(--border);
-        font-size: 18px;
-        margin-top: 2px;
-        transition: color 0.15s;
-      }
-      .project:hover .arrow {
-        color: var(--green);
-      }
+    .project-desc {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.55;
+    }
 
-      .mod-intro {
-        color: var(--muted);
-        font-size: 15px;
-        max-width: 520px;
-        margin-bottom: 28px;
-        line-height: 1.65;
-      }
+    .project-tag {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 6px;
+    }
 
-      .mod-site {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding: 18px 0;
-        border-bottom: 1px solid var(--border);
-        text-decoration: none;
-        color: inherit;
-        transition: opacity 0.15s;
-        gap: 16px;
-      }
-      .mod-site:first-child {
-        border-top: 1px solid var(--border);
-      }
-      .mod-site:hover {
-        opacity: 0.6;
-      }
+    .project-arrow {
+      font-size: 15px;
+      color: var(--border);
+      flex-shrink: 0;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .project:hover .project-arrow {
+      color: var(--text);
+      transform: translate(2px, -2px);
+    }
 
-      .mod-name {
-        font-family: "Lora", serif;
-        font-size: 1rem;
-        font-weight: 600;
-      }
+    /* ── COMMUNITY ── */
+    .mod-site {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 15px 0;
+      border-top: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: padding 0.2s ease;
+    }
+    .mod-site:last-child { border-bottom: 1px solid var(--border); }
+    .mod-site:hover { padding-left: 10px; padding-right: 10px; }
 
-      .mod-role {
-        font-size: 13px;
-        color: var(--green);
-        white-space: nowrap;
-      }
+    .mod-name { font-size: 14px; font-weight: 500; color: var(--text); transition: color 0.15s; }
+    .mod-site:hover .mod-name { color: var(--accent); }
+    .mod-meta { font-size: 13px; color: var(--muted); font-weight: 300; white-space: nowrap; }
 
-      .about-text {
-        color: var(--muted);
-        font-size: 15px;
-        max-width: 520px;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
+    /* ── ABOUT ── */
+    .about-text {
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
 
-      footer {
-        border-top: 1px solid var(--border);
-        padding: 32px 0 56px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 13px;
-        color: var(--muted);
-      }
+    /* ── FOOTER ── */
+    footer {
+      padding: 28px 0 56px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+    }
 
-      footer a {
-        color: var(--muted);
-        text-decoration: none;
-        transition: color 0.15s;
-      }
-      footer a:hover {
-        color: var(--green);
-      }
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--text); }
 
-      @media (max-width: 500px) {
-        header {
-          padding: 52px 0 40px;
-        }
-        .section {
-          padding: 36px 0;
-        }
-        footer {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 8px;
-        }
-        .mod-site {
-          flex-direction: column;
-          gap: 2px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
+    @media (max-width: 540px) {
+      .header-top { flex-direction: column; gap: 8px; }
+      .mod-site { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="header-top">
         <h1>Jonathan Oswald</h1>
-        <p class="tagline">
-          Final-year software engineering student at the University of
-          Newcastle. I've spent most of my spare time thinking about what it
-          actually feels like to write code.
-        </p>
-        <a
-          class="gh-link"
-          href="https://github.com/lyxal"
-          target="_blank"
-          rel="noopener"
-          >github.com/lyxal</a
-        >
-      </header>
-
-      <hr />
-
-      <div class="section">
-        <p class="section-title">Selected work</p>
-
-        <a
-          class="project"
-          href="https://github.com/Vyxal/Vyxal"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">Vyxal</div>
-            <p class="project-desc">
-              A code-golfing language with a full interpreter, documentation and
-              online playground. The goal was to make a language that's
-              competitive on brevity without being unreadable after the fact.
-            </p>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
-
-        <a
-          class="project"
-          href="https://github.com/lyxal/Valiance"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">Valiance</div>
-            <p class="project-desc">
-              An array programming language designed in 2026. APL's ideas are
-              genuinely good; the notation has just been a barrier since 1966.
-              Valiance tries to fix that.
-            </p>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
-
-        <a
-          class="project"
-          href="https://github.com/Vyxal/Luminespire"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">Luminespire</div>
-            <p class="project-desc">
-              A code golf explanation assistant for Vyxal. Takes a solution and
-              walks through what it does - useful when terse code needs to be
-              legible to someone other than the author.
-            </p>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
-
-        <a
-          class="project"
-          href="https://github.com/lyxal/WatchScribe"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">WatchScribe</div>
-            <p class="project-desc">
-              A spam-fighting tool for StackExchange. Automates pattern
-              detection so moderators can spend time on cases that actually need
-              a person.
-            </p>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
-
-        <a
-          class="project"
-          href="https://github.com/lyxal/SE-Profile-Annotations"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">SE Profile Annotations</div>
-            <p class="project-desc">
-              A browser tool for adding private notes to StackExchange user
-              profiles - useful for moderation context that doesn't belong in
-              public records.
-            </p>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
-
-        <a
-          class="project"
-          href="https://github.com/lyxal/Chromatura"
-          target="_blank"
-          rel="noopener"
-        >
-          <div>
-            <div class="project-name">Chromatura</div>
-            <p class="project-desc">
-              A manual syntax highlighter for languages that don't have an LSP
-              yet. Built with AI agent tools - a practical exercise in knowing
-              when to write code and when to direct something else to write it.
-            </p>
-            <span class="project-tag">AI-assisted</span>
-          </div>
-          <span class="arrow">&#8599;</span>
-        </a>
+        <span class="availability">Open to placement</span>
       </div>
+      <p class="tagline">Final-year software engineering student at the University of Newcastle. I've spent most of my spare time thinking about what it actually feels like to write code.</p>
+      <a class="gh-link" href="https://github.com/lyxal" target="_blank" rel="noopener">github.com/lyxal</a>
+    </header>
 
-      <hr />
+    <section>
+      <p class="section-label">Selected work</p>
 
-      <div class="section">
-        <p class="section-title">Community</p>
-        <p class="mod-intro">
+      <a class="project" href="https://github.com/Vyxal/Vyxal" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">Vyxal</div>
+          <div class="project-desc">A code-golfing language with a full interpreter, documentation and online playground. The goal was to make a language that's competitive on brevity without being unreadable after the fact.</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a class="project" href="https://github.com/lyxal/Valiance" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">Valiance</div>
+          <div class="project-desc">An array programming language designed in 2026. APL's ideas are genuinely good; the notation has just been a barrier since 1966. Valiance tries to fix that.</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a class="project" href="https://github.com/Vyxal/Luminespire" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">Luminespire</div>
+          <div class="project-desc">A code golf explanation assistant for Vyxal. Takes a solution and walks through what it does - useful when terse code needs to be legible to someone other than the author.</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a class="project" href="https://github.com/lyxal/WatchScribe" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">WatchScribe</div>
+          <div class="project-desc">A spam-fighting tool for StackExchange. Automates pattern detection so moderators can spend time on cases that actually need a person.</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a class="project" href="https://github.com/lyxal/SE-Profile-Annotations" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">SE Profile Annotations</div>
+          <div class="project-desc">A browser tool for adding private notes to StackExchange user profiles - useful for moderation context that doesn't belong in public records.</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a class="project" href="https://github.com/lyxal/Chromatura" target="_blank" rel="noopener">
+        <div class="project-left">
+          <div class="project-name">Chromatura</div>
+          <div class="project-desc">A manual syntax highlighter for languages that don't have an LSP yet. Built with AI agent tools - a practical exercise in knowing when to write code and when to direct something else to write it.</div>
+          <div class="project-tag">AI-assisted</div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+    </section>
+
+    <section>
+      <p class="section-label">Community</p>
+
+              <p class="mod-intro">
           Over on the
           <a href="https://stackexchange.com">StackExchange</a> network, I've
           been moderating communities for a few years. It's given me a lot of
@@ -372,87 +282,37 @@
           to use - whether that's a programming language or a Q&A site. Below
           are the communities I currently moderate:
         </p>
-        <div>
-          <a
-            class="mod-site"
-            href="https://codegolf.stackexchange.com/users/78850/lyxal"
-            target="_blank"
-            rel="noopener"
-          >
-            <span class="mod-name">Code Golf Stack Exchange</span>
-            <span class="mod-role">Elected moderator - September 2025</span>
-          </a>
-          <a
-            class="mod-site"
-            href="https://langdev.stackexchange.com/users/169/lyxal"
-            target="_blank"
-            rel="noopener"
-          >
-            <span class="mod-name">Language Design Stack Exchange</span>
-            <span class="mod-role"
-              >Elected pro-tempore moderator - July 2023</span
-            >
-          </a>
-          <a
-            class="mod-site"
-            href="https://genai.stackexchange.com/users/34/lyxal"
-            target="_blank"
-            rel="noopener"
-          >
-            <span class="mod-name">Generative AI Stack Exchange</span>
-            <span class="mod-role"
-              >Elected pro-tempore moderator - December 2025</span
-            >
-          </a>
-        </div>
+
+      <a class="mod-site" href="https://langdev.stackexchange.com/users/169/lyxal" target="_blank" rel="noopener">
+        <span class="mod-name">Language Design Stack Exchange</span>
+        <span class="mod-meta">Elected pro-tempore moderator - Since July 2023</span>
+      </a>
+      <a class="mod-site" href="https://codegolf.stackexchange.com/users/78850/lyxal" target="_blank" rel="noopener">
+        <span class="mod-name">Code Golf Stack Exchange</span>
+        <span class="mod-meta">Elected moderator - Since September 2025</span>
+      </a>
+      <a class="mod-site" href="https://genai.stackexchange.com/users/34/lyxal" target="_blank" rel="noopener">
+        <span class="mod-name">Generative AI Stack Exchange</span>
+        <span class="mod-meta">Elected pro-tempore moderator - Since December 2025</span>
+      </a>
+
+    </section>
+
+    <section>
+      <p class="section-label">About</p>
+      <div class="about-text">
+        <p>I'm finishing a Bachelor of Software Engineering at the University of Newcastle (started 2021). The academic side is done; I'm currently looking for a placement to complete the required industry hours.</p>
+        <p>The thread running through most of my projects is an interest in what programming actually feels like to do. A lot of languages treat ergonomics as an afterthought - syntax gets inherited from whatever came before, friction accumulates, and nobody questions it. Vyxal came from asking what brevity looks like when you actually design for it. Valiance came from asking why array programming has to be so hostile to read.</p>
+        <p>I've also been moderating StackExchange communities for a few years, and spending time on the AI side working through what agentic workflows are capable of in practice.</p>
+        <p>Backend roles, broadly. Open to most things above the hardware layer.</p>
       </div>
+    </section>
 
-      <hr />
+    <footer>
+      <span>Jonathan Oswald</span>
+      <a href="https://github.com/lyxal" target="_blank" rel="noopener">GitHub</a>
+    </footer>
 
-      <div class="section">
-        <p class="section-title">About</p>
-        <div class="about-text">
-          <p>
-            I'm finishing a Bachelor of Software Engineering at the University
-            of Newcastle (started 2021). The academic side is done; I'm
-            currently looking for a placement to complete the required industry
-            hours.
-          </p>
-          <p>
-            The thread running through most of my projects is an interest in
-            what programming actually feels like to do. A lot of languages and
-            tools treat ergonomics as an afterthought - syntax gets inherited
-            from whatever came before, friction accumulates, and nobody
-            questions it. Vyxal came from asking what brevity looks like when
-            you actually design for it. Valiance came from asking why array
-            programming has to be so hostile to read. That question - what would
-            this be like if someone had actually thought about the person using
-            it - tends to be where I start.
-          </p>
-          <p>
-            I've also been moderating StackExchange communities for a few years:
-            three years on Language Design, eight months on Code Golf, five
-            months on Generative AI. That's meant a lot of time thinking about
-            how technical communities work and where they break down.
-          </p>
-          <p>
-            On the AI side, I've been working through what agentic workflows are
-            capable of in practice - less as a user and more as someone trying
-            to understand where the feedback loop holds and where it doesn't.
-          </p>
-          <p>
-            Backend roles, broadly. Open to most things above the hardware
-            layer.
-          </p>
-        </div>
-      </div>
-
-      <footer>
-        <span>Jonathan Oswald</span>
-        <a href="https://github.com/lyxal" target="_blank" rel="noopener"
-          >GitHub</a
-        >
-      </footer>
-    </div>
-  </body>
+  </div>
+</body>
 </html>
