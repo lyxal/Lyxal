@@ -13,7 +13,7 @@ A code-golfing language with a full interpreter, documentation and online playgr
 An array programming language designed in 2026. APL's ideas are genuinely good; the notation has just been a barrier since 1966. Valiance tries to fix that.
 
 ### [Luminespire](https://github.com/Vyxal/Luminespire)
-A code golf explanation assistant for code golfing.
+A code golf explanation assistant for answers on the code golf stack exchange. Lining up non-single-width characters can be very difficult. This tool makes it a breeze.
 
 ### [WatchScribe](https://github.com/lyxal/WatchScribe)
 A spam-fighting tool for StackExchange. Automates pattern detection so moderators can spend time on cases that actually need a person.
