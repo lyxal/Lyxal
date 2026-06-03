@@ -16,10 +16,10 @@ An array programming language designed in 2026. APL's ideas are genuinely good; 
 A code golf explanation assistant for answers on the code golf stack exchange. Lining up non-single-width characters can be very difficult. This tool makes it a breeze.
 
 ### [WatchScribe](https://github.com/lyxal/WatchScribe)
-A spam-fighting tool for StackExchange. Automates pattern detection so moderators can spend time on cases that actually need a person.
+Spam-fighting tooling for the StackExchange spam handling volunteer team Charcoal. Significantly simplified the process of generating regular expressions (regexes) used to determine if a question/answer posted on the StackExchange network is likely to be spam. Provides a select-and-click method of regex generation, an improvement over handwritten regex. Incorporates fifteen regex-generation heuristics built from a decade of collective spam-handling experience.
 
 ### [SE Profile Annotations](https://github.com/lyxal/SE-Profile-Annotations)
-A browser tool for adding private notes to StackExchange user profiles. This adds funcitonality StackExchange does not provide for moderation context that doesn't belong in public records.
+A browser tool for adding private notes to StackExchange user profiles. This adds functionality StackExchange does not provide for moderation context that doesn't belong in public records.
 
 ### [Chromatura](https://github.com/lyxal/Chromatura) *(AI-assisted)*
 A manual syntax highlighter for languages that don't have an LSP yet. Built with AI agent tools as a practical exercise in knowing when to write code and when to direct something else to write it.
@@ -49,5 +49,4 @@ On the AI side, I've been working through what agentic workflows are capable of 
 
 [github.com/lyxal](https://github.com/lyxal)
 
-<img src="https://github.com/lyxal/Lyxal/blob/main/profile/top-langs.svg" />
 
