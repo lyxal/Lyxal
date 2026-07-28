@@ -123,7 +123,7 @@
         <svg data-testid="donut">
           
       <g class="stagger" style="animation-delay: 100ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -138,7 +138,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 200ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -153,7 +153,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 300ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -168,7 +168,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 400ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -183,7 +183,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 500ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -198,7 +198,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 600ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -213,7 +213,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 700ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -228,7 +228,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 800ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -243,7 +243,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 900ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -258,7 +258,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1000ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -273,7 +273,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1100ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -288,7 +288,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1200ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -303,7 +303,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1300ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -318,7 +318,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1400ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -333,7 +333,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1500ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -348,7 +348,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1600ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -363,7 +363,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1700ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -378,7 +378,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1800ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -393,7 +393,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 1900ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
@@ -408,7 +408,7 @@
       </g>
     
       <g class="stagger" style="animation-delay: 2000ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="80"
