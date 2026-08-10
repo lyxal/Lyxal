@@ -1,9 +1,3 @@
-_[For a better looking HTML version of this page, click here](https://lyxal.github.io/Lyxal/)_
-
-I'm a final-year software engineering student at the University of Newcastle. I build things - languages, tools, communities - and I'm just as interested in how software shapes the people around it as I am in the code itself. 
-
----
-
 ## Projects
 
 ### [Vyxal](https://github.com/Vyxal/Vyxal)
