@@ -17,30 +17,3 @@ A browser tool for adding private notes to StackExchange user profiles. This add
 
 ### [Chromatura](https://github.com/lyxal/Chromatura) *(AI-assisted)*
 A manual syntax highlighter for languages that don't have an LSP yet. Built with AI agent tools as a practical exercise in knowing when to write code and when to direct something else to write it.
-
----
-
-## Community
-
-Elected moderator on three StackExchange communities:
-
-- [Code Golf Stack Exchange](https://codegolf.stackexchange.com/users/78850/lyxal) - 8 months
-- [Language Design Stack Exchange](https://langdev.stackexchange.com/users/169/lyxal) - 3 years
-- [Generative AI Stack Exchange](https://genai.stackexchange.com/users/34/lyxal) - 5 months
-
----
-
-## About
-
-I'm finishing a Bachelor of Software Engineering at the University of Newcastle (started 2021). The academic side is done; I'm currently looking for a placement to complete the required industry hours.
-
-The thread running through most of my projects is an interest in what programming actually feels like to do. A lot of languages and tools treat ergonomics as an afterthought - syntax gets inherited from whatever came before, friction accumulates, and nobody questions it. Vyxal came from asking what brevity looks like when you actually design for it. Valiance came from asking why array programming has to be so hostile to read. That question - what would this be like if someone had actually thought about the person using it - tends to be where I start.
-
-On the AI side, I've been working through what agentic workflows are capable of in practice - less as a user and more as someone trying to understand where the feedback loop holds and where it doesn't.
-
-
----
-
-[github.com/lyxal](https://github.com/lyxal)
-
-
