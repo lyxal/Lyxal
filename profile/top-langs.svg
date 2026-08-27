@@ -308,7 +308,7 @@
           cy="100"
           r="80"
           fill="transparent"
-          stroke="#178600"
+          stroke="#7355dd"
           stroke-width="25"
           stroke-dasharray="502.6548245743669"
           stroke-dashoffset="498.18619136633004"
@@ -512,7 +512,7 @@
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#178600" />
+      <circle cx="5" cy="6" r="5" fill="#7355dd" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
         C# 0.28%
       </text>
